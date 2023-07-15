@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <title>Sea Life</title>
+    <!-- Aos Animation Cdn Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Boostrap Cdn Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Swiper Cdn Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- FontAwosome Cdn Link -->
+    <script src="https://kit.fontawesome.com/cb79a07141.js" crossorigin="anonymous"></script>
+    <!-- Custum Css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar section starts -->
+
+    <header class="head">
+        <a href="#Home">
+            <img class="logo" src="imgs/sea-life-logo.webp" alt="logo-img">
+        </a>
+
+        <nav id="navbartest" class="navbar">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link active" href="#Home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Explore
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#Events">Events</a></li>
+                      <li><a class="dropdown-item" href="#Testimonial">Reviews</a></li>
+                    </ul>
+                <li class="nav-item"><a class="nav-link" href="#faqs-container">FAQ's</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="icons">
+            <div id="menubtn"><i class="fa-solid fa-bars"></i></div>
+            <div id="searchbtn"><i class="fa-solid fa-magnifying-glass fa-2x"></i></div>
+            <!-- visit counter -->
+            <span id="visiter_count" class="visiter-count"></span>
+            <!-- <button id="reset">Reset</button> -->
+        </div>
+
+
+        <form action="" class="search-form">
+            <input type="search" placeholder="Search Here" id="input-box">
+            <label for="input-box" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <!-- Navbar section ends -->
+
+    <!--  Blur Cursor Effect Starts  -->
+
+    <div id="moviingcursoreffect"></div>
+
+    <!-- Blur Cursor Effect End -->
+
+    <!-- home section starts -->
+<div id="Main-Container"  data-bs-spy="scroll" data-bs-target="#navbartest" data-aos-offset="60">
+
+
+    <section class="home" id="Home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box" style="background: url(imgs/home-1.jpg);">
+                    <div class="content">
+                        <h3>Sea Life</h3>
+                        <p>Special Discount</p>
+                        <div class="button">
+                            <a href="#Contact" class="btn">Buy Ticket</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box" style="background: url(imgs/home-2.jpg);">
+                    <div class="content">
+                        <h3>Upto 30% Off</h3>
+                        <p>For the Children</p>
+                        <div class="button">
+                            <a href="#Contact" class="btn">Buy Ticket</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box" style="background: url(imgs/home-3.jpg);">
+                    <div class="content">
+                        <h3>Limtited Offer</h3>
+                        <p>Don't Miss It</p>
+                        <div class="button">
+                            <a href="#Contact" class="btn">Buy Ticket</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- home section ends -->
+
+
+    <!-- Main Gallery section Start -->
+
+    <section id="Gallery" class="gallery">
+        <h2 class="text-center main-gallery-heading">Gallery</h2>
+        <ul class="images" data-aos="zoom-in" data-aos-offset="200">
+            <li class="card">
+                <img src="imgs/4-min.jpeg" alt="img">
+                <div class="details">
+                    <div class="fish-name">
+                        <span class="fish-name-head">Turtles</span>
+                        <span class="fish-name-about">Turtles are fascinating reptiles that have captured the hearts of
+                            many.</span>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="imgs/5-min.jpeg" alt="img">
+                <div class="details">
+                    <div class="fish-name">
+                        <span class="fish-name-head">Shark</span>
+                        <span class="fish-name-about">Sharks are awe-inspiring creatures that command respect in the
+                            marine world.</span>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="imgs/6-min.jpeg" alt="img">
+                <div class="details">
+                    <div class="fish-name">
+                        <span class="fish-name-head">Green Turtles</span>
+                        <span class="fish-name-about">Green turtles are magnificent marine reptiles known for their
+                            graceful movements and striking appearance.</span>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="imgs/7-min.jpeg" alt="img">
+                <div class="details">
+                    <div class="fish-name">
+                        <span class="fish-name-head">Red Fish</span>Red fish, with their vibrant and eye-catching
+                        coloration, are a stunning sight in the underwater world.</span>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="imgs/8-min.jpeg" alt="img">
+                <div class="details">
+                    <div class="fish-name">
+                        <span class="fish-name-head">Jelly Fish</span>
+                        <span class="fish-name-about">Jellyfish are mesmerizing creatures found in oceans
+                            worldwide.</span>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="imgs/9-min.jpeg" alt="img">
+                <div class="details">
+                    <div class="fish-name">
+                        <span class="fish-name-head">Baby Dolphins</span>
+                        <span class="fish-name-about">Baby dolphins, also known as calves,possess a strong bond with
+                            their mothers and learn essential survival skills through play.</span>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="imgs/10-min.jpeg" alt="img">
+                <div class="details">
+                    <div class="fish-name">
+                        <span class="fish-name-head">Dive Turtles</span>
+                        <span class="fish-name-about">Dive turtles, also known as sea turtles, are captivating marine
+                            reptiles that captivate with their grace and beauty.</span>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="imgs/11-min.jpeg" alt="img">
+                <div class="details">
+                    <div class="fish-name">
+                        <span class="fish-name-head">Dolphin</span>
+                        <span class="fish-name-about">Dolphins are highly intelligent marine mammals known for their
+                            playful behavior, remarkable agility, and remarkable communication skills. </span>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="imgs/Giant Clam.jpg" alt="img">
+                <div class="details">
+                    <div class="fish-name">
+                        <span class="fish-name-head">Giant Clam</span>
+                        <span class="fish-name-about">The giant clam, Tridacna gigas, is rarely found among coral reefs these days due to years of overharvesting.</span>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="imgs/Anemonefish.jpg" alt="img">
+                <div class="details">
+                    <div class="fish-name">
+                        <span class="fish-name-head">Anemone Fish</span>
+                        <span class="fish-name-about">Anemone fish, also known as clownfish, are colorful marine fish commonly found in coral reefs.</span>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="imgs/Anglerfish.jpeg" alt="img">
+                <div class="details">
+                    <div class="fish-name">
+                        <span class="fish-name-head">Angler Fish</span>
+                        <span class="fish-name-about">The anglerfish is a unique deep-sea creature known for its distinctive appearance. It possesses a large head and a mouth filled with sharp teeth.</span>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="imgs/Bottlenose Dolphin.jpg" alt="img">
+                <div class="details">
+                    <div class="fish-name">
+                        <span class="fish-name-head">Bottlenose Dolphin</span>
+                        <span class="fish-name-about">The Bottlenose Dolphin is an intelligent and social marine mammal.
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="card">
+                <img src="imgs/blue-tang.webp" alt="img">
+                <div class="details">
+                    <div class="fish-name">
+                        <span class="fish-name-head">Blue-Tang</span>
+                        <span class="fish-name-about">The Blue Tang is a vibrant, tropical fish characterized by its stunning blue coloration and a bright yellow tail.
+                        </span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- Main Gallery section End -->
+
+
+    <!-- About section Start -->
+    <section id="About" class="about">
+        <h2 class="text-center team-about-heading">About Us</h2>
+
+        <div class="about-row" data-aos="fade-right" data-aos-offset="210">
+            <img class="about-img1" src="imgs/about1.gif" alt="about-img1">
+
+            <h3 class="about-sub-head">About Sea Life</h3>
+            <div id="about-readmore1">
+            <p>Welcome to Sea Life! With our expertise and passion, we inspire love for the ocean through immersive
+                experiences, making us a leading authority in showcasing the wonders of marine life.</p>
+                <div id="content1" class="content">
+                <p>we believe in the power of education and exploration to foster a connection with the ocean. Through immersive experiences and innovative exhibits, we strive to inspire visitors of all ages to develop a profound understanding of marine ecosystems and the need for their conservation. Our team of dedicated experts is constantly pushing the boundaries to create engaging and informative encounters that leave a lasting impact on our guests. Embark on a journey with us and discover the enchanting beauty of the ocean at sealife.</p>
+            </div>
+            <button  class="btn about-btn toggleBtn" data-target="#content1">Read More</button>
+        </div>
+        </div>
+        <div class="about-row" data-aos="fade-left" data-aos-offset="210">
+            <img class="about-img2" src="imgs/about4.gif" alt="about-img">
+
+            <h3 class="about-sub-head">Our Mission: Inspiring Love for the Ocean</h3>
+             <div id="about-readmore2">
+            <p>Our Mission: Inspiring Love for the Ocean. We are dedicated to igniting a lifelong passion for the ocean,
+                fostering appreciation for its beauty, and promoting its conservation through engaging experiences and
+                education.</p>
+                <div id="content2" class="content">
+                    <p>we believe in the power of education and exploration to foster a connection with the ocean. Through immersive experiences and innovative exhibits, we strive to inspire visitors of all ages to develop a profound understanding of marine ecosystems and the need for their conservation. Our team of dedicated experts is constantly pushing the boundaries to create engaging and informative encounters that leave a lasting impact on our guests. Embark on a journey with us and discover the enchanting beauty of the ocean at sealife.</p>
+                </div>
+                <button  class="btn about-btn toggleBtn" data-target="#content2">Read More</button>
+                </div>
+        </div>
+        <div class="about-row" data-aos="fade-right" data-aos-offset="210">
+            <img class="about-img1" src="imgs/about3.gif" alt="about-img1">
+
+            <h3 class="about-sub-head">Educational Experiences and Conservation Initiatives</h3>
+             <div id="about-readmore1">
+            <p>Educational Experiences and Conservation Initiatives. We offer engaging exhibits and initiatives that
+                educate visitors about marine life and promote conservation, empowering them to become ocean advocates.
+            </p>
+            <div id="content3" class="content">
+                <p>we believe in the power of education and exploration to foster a connection with the ocean. Through immersive experiences and innovative exhibits, we strive to inspire visitors of all ages to develop a profound understanding of marine ecosystems and the need for their conservation. Our team of dedicated experts is constantly pushing the boundaries to create engaging and informative encounters that leave a lasting impact on our guests. Embark on a journey with us and discover the enchanting beauty of the ocean at sealife.</p>
+            </div>
+            <button  class="btn about-btn toggleBtn" data-target="#content3">Read More</button>
+        </div>
+        </div>
+        <div class="about-row" data-aos="fade-left" data-aos-offset="210">
+            <img class="about-img2" src="imgs/about5.gif" alt="about-img">
+
+            <h3 class="about-sub-head">Visit Us and Experience the Magic of the Sea</h3>
+             <div id="about-readmore2">
+            <p>Visit Us and Experience the Magic of the Sea. Dive into our captivating aquarium and be enchanted by the
+                beauty and wonder of marine life, creating unforgettable memories.</p>
+                <div id="content4" class="content">
+                    <p>we believe in the power of education and exploration to foster a connection with the ocean. Through immersive experiences and innovative exhibits, we strive to inspire visitors of all ages to develop a profound understanding of marine ecosystems and the need for their conservation. Our team of dedicated experts is constantly pushing the boundaries to create engaging and informative encounters that leave a lasting impact on our guests. Embark on a journey with us and discover the enchanting beauty of the ocean at sealife.</p>
+                </div>
+                <button  class="btn about-btn toggleBtn" data-target="#content4">Read More</button>
+            </div>
+        </div>
+    </section>
+    <!-- About section End -->
+
+
+
+    <!-- childrent events section  starts -->
+
+    <!-- Pop-Up Container Starts -->
+    <div id="popupContainer" class="popup-container">
+        <div class="popup-content">
+          <div id="popupContent">
+          </div>
+          <button id="closePopupBtn" class="btn">Close</button>
+        </div>
+      </div>
+    <!-- Pop-Up Container Ends -->
+
+    <section id="Events" class="events">
+
+        <h1 class="text-center events-main-heading">Children Events</h1>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="flip-left">
+                <div class="imgs">
+                    <img src="imgs/10-min.jpeg" alt="erorr">
+                </div>
+
+                <div class="content">
+                    <h3>Storytelling</h3>
+                    <p>Children Library</p>
+                    <button  id="openPopupBtn1" class="btn">Read More</button>
+                    <div class="icons">
+                        <a href=""><i class="fa-regular fa-calendar-days"></i>July 15, 2023</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box" data-aos="flip-up">
+                <div class="imgs">
+                    <img src="imgs/11-min.jpeg" alt="erorr">
+                </div>
+
+                <div class="content">
+                    <h3>Arts and Crafts Fair</h3>
+                    <p>Art Studio</p>
+                    <button  id="openPopupBtn2" class="btn">Read More</button>
+                    <div class="icons">
+                        <a href=""><i class="fa-regular fa-calendar-days"></i>August 2, 2023</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="box" data-aos="flip-right">
+                <div class="imgs">
+                    <img src="imgs/4-min.jpeg" alt="erorr">
+                </div>
+
+                <div class="content">
+                    <h3>Science Exploration</h3>
+                    <p>Science Lab</p>
+                    <button  id="openPopupBtn3" class="btn">Read More</button>
+                    <div class="icons">
+                        <a href=""><i class="fa-regular fa-calendar-days"></i>September 10, 2023</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- childrents events section  Ends -->
+
+
+    <!-- Rate/Review section Start -->
+
+    <section id="Testimonial">
+
+        <h2 class="text-center testimonial-main-heading">Customer Reviews</h2>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="testimonial-img" src="imgs/review1.webp" alt="erorr">
+                    <h3>Sarah M</h3>
+                    <div class="testimonial-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>Sea Life was truly delightful! The immersive exhibits and knowledgeable staff left me in awe.
+                        Highly recommended!</p>
+                </div>
+                <div class="swiper-slide">
+                    <img class="testimonial-img" src="imgs/review2.webp" alt="erorr">
+                    <h3>John P</h3>
+                    <div class="testimonial-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>Sea Life was fantastic! The interactive displays and engaging presentations made learning about
+                        marine life fun and inspiring.</p>
+                </div>
+                <div class="swiper-slide">
+                    <img class="testimonial-img" src="imgs/review3.webp" alt="erorr">
+                    <h3>Emily L</h3>
+                    <div class="testimonial-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Sea Life was unforgettable! The perfect blend of entertainment and education for all ages.
+                    Enthusiastic staff made it even more exciting. We're eager to visit again</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Rate/Review section End -->
+
+        <!-- FAQ's section Starts -->
+
+        <section id="faqs-container">
+
+            <h2 class="text-center mt-5 faq-main-heading">Frequently Asked Questions</h2>
+            <div id="faq-list">
+                <div class="faq-question">
+                    <i class="fas fa-angle-down"></i>
+                    Q: What is the age range for the children's events?
+                </div>
+                <div class="faq-answer">A: The children's events are suitable for children aged 5-12.</div>
+                <hr>
+                <div class="faq-question">
+                    <i class="fas fa-angle-down"></i>
+                    Q: Are parents allowed to attend the events with their children?
+                </div>
+                <div class="faq-answer">A: Yes, parents are welcome to accompany their children to the events.</div>
+                <hr>
+                <div class="faq-question">
+                    <i class="fas fa-angle-down"></i>
+                    Q: Do I need to purchase tickets in advance?
+                </div>
+                <div class="faq-answer">A: It is recommended to purchase tickets in advance to secure your spot.</div>
+                <hr>
+                <div class="faq-question">
+                    <i class="fas fa-angle-down"></i>
+                    Q: Are there any age restrictions for visiting Sea Life?
+                </div>
+                <div class="faq-answer">A: No, there are no age restrictions. Anyone Can visit.</div>
+                <hr>
+                <div class="faq-question">
+                    <i class="fas fa-angle-down"></i>
+                    Q: Does Sea Life offer guided tours or self-guided exploration?
+                </div>
+                <div class="faq-answer">A: We offer both guided tours and the option for self-guided exploration.</div>
+                <hr>
+            </div>
+    
+        </section>
+    
+        <!-- FAQ's section End -->
+
+    <!-- Contact section Start -->
+    <section class="contact" id="Contact">
+
+        <h2 class="text-center main-contact-heading">Contact Us</h2>
+
+        <div class="row">
+
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8050607905225!2d103.82297758885498!3d1.2913102999999915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19ba51aa58d9%3A0xca219b34d3fd970d!2sSea%20Life%20Aquarium!5e0!3m2!1sen!2s!4v1688650875027!5m2!1sen!2s"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form action="">
+                <div class="content">
+                    <h3>Tell Us Something!</h3>
+                </div>
+                <input type="text" placeholder="Your Name" class="box" required>
+                <input type="email" placeholder="Your Email" class="box" required>
+                <input type="number" placeholder="Your Number" class="box" required>
+                <textarea class="box" placeholder="Your Message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact section End -->
+
+
+
+</div>
+
+
+
+    <!-- Date time section Starts -->
+
+    <div class="datework">
+        <marquee scrollamount="8" id="date_time"></marquee>
+    </div>
+
+    <!-- Date time section Ends -->
+
+
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <img src="imgs/sea-life-logo.webp" alt="logo" width="30%" height="30rem">
+                        <p>
+                            <b>Singapore</b> <br>
+                            78 Indus Rd<br>
+                            Block 78<br>
+                            Singapore 161078<br>
+                        </p>
+                        <strong>Phone:</strong> +65 6256 4727 <br>
+                        <strong>Email:</strong> sealife@gmail.com <br>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Usefull Links</h4>
+                        <ul>
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#Gallery">Gallery</a></li>
+                            <li><a href="#About">About Us</a></li>
+                            <li><a href="#Contact">Contact</a></li>
+                            <li><a href="#faqs-container">FAQ's</a></li>
+                            <li><a href="#">Privacy policey</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links2">
+                        <h4>Social Links</h4>
+                        <div class="footer-icons">
+                            <a target="_blank" href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+                            <a target="_blank" href="https://www.youtube.com/@naturerelaxationfilms"><i class="fa-brands fa-youtube fa-2x"></i></a>
+                            <a target="_blank" href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Den"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-4">
+            <div class="copyright">
+                &copy; Copyright <strong>Sea Life</strong>. All Rights Reserved
+            </div>
+    </footer>
+    <!-- footer -->
+
+
+
+    <!-- Back to top button Starts -->
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Back to top button Ends -->
+</body>
+
+<!-- Boostrap Cdn Link -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+<!-- Jquery Link -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- Custum JavaScript -->
+<script src="js/index.js"></script>
+<!-- Aos Animation Cdn Link -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 130,
+        duration: "1000",
+    });
+</script>
+
+</html>
